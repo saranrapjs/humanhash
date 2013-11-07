@@ -8,7 +8,7 @@ humanhash provides human-readable representations of digests.  This is a PHP por
 php > require_once("humanhash.php");
 php > $digest = '7528880a986c40e78c38115e640da2a1';
 php > echo humanhasher::humanize($digest);
-'three-georgia-xray-jigp'
+'three-georgia-xray-jig'
 
 php > echo humanhasher::humanize($digest, 6);
 'high-mango-white-oregon-purple-charlie'
