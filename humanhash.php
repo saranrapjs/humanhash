@@ -2,7 +2,7 @@
 /**
 	* humanhash: Human-readable representations of digests.
 */
-class humanhash {
+class humanhasher {
 	static $wordlist = array(
     'ack', 'alabama', 'alanine', 'alaska', 'alpha', 'angel', 'apart', 'april',
     'arizona', 'arkansas', 'artist', 'asparagus', 'aspen', 'august', 'autumn',
@@ -42,8 +42,8 @@ class humanhash {
     'zulu');
 	static function humanize($digest, $words = 4, $separator = "-") {
 		$bytes = array();
-		for($i = 0; $i < strlen($digest); $i++) {
-		   $bytes[] = ord($digest[$i]);
+		foreach(array_chunk(str_split($digest), 2) as $pair) {
+			$bytes[] = intval($pair[0] . $pair[1], 16);
 		}
 		$compressed = self::compress($bytes, $words);
 		return implode($separator, self::hexesToWords($compressed));
