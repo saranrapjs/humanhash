@@ -4,22 +4,23 @@ humanhash provides human-readable representations of digests.  This is a PHP por
 
 
 ## Example
+```php
+php > require_once("humanhash.php");
+php > $digest = '7528880a986c40e78c38115e640da2a1';
+php > echo humanhash::humanize($digest);
+'happy-alanine-ack-golf'
 
-    php > require_once("humanhash.php");
-    php > $digest = '7528880a986c40e78c38115e640da2a1';
-    php > echo humanhash::humanize($digest);
-    'happy-alanine-ack-golf'
-    php > echo humanhash::humanize($digest, 6);
-    'december-item-don-island-iowa-india'
+php > echo humanhash::humanize($digest, 6);
+'december-item-don-island-iowa-india'
 
-    php > var_dump(humanhash::uuid());
-    array(2) {
-      [0]=>
-      string(29) "hotel-glucose-alanine-alabama"
-      [1]=>
-      string(32) "8b5cf0360f304647b7a23b4a9e9c4f7b"
-    }
-
+php > var_dump(humanhash::uuid());
+array(2) {
+  [0]=>
+  string(29) "hotel-glucose-alanine-alabama"
+  [1]=>
+  string(32) "8b5cf0360f304647b7a23b4a9e9c4f7b"
+}
+```
 
 ## Caveats
 
