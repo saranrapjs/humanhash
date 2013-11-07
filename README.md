@@ -11,7 +11,7 @@ php > echo humanhasher::humanize($digest);
 'three-georgia-xray-jigp'
 
 php > echo humanhasher::humanize($digest, 6);
-high-mango-white-oregon-purple-charlie
+'high-mango-white-oregon-purple-charlie'
 
 php > var_dump(humanhasher::uuid());
 array(2) {
