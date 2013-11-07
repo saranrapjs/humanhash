@@ -1,24 +1,24 @@
 # humanhash php
 
-humanhash provides human-readable representations of digests.  This is a PHP port of [the Python module humanhash](https://github.com/zacharyvoase/humanhash)
+humanhash provides human-readable representations of digests.  This is a PHP port of [the Python module humanhash](https://github.com/zacharyvoase/humanhash).
 
 
 ## Example
 ```php
 php > require_once("humanhash.php");
 php > $digest = '7528880a986c40e78c38115e640da2a1';
-php > echo humanhash::humanize($digest);
-'happy-alanine-ack-golf'
+php > echo humanhasher::humanize($digest);
+'three-georgia-xray-jigp'
 
-php > echo humanhash::humanize($digest, 6);
-'december-item-don-island-iowa-india'
+php > echo humanhasher::humanize($digest, 6);
+high-mango-white-oregon-purple-charlie
 
-php > var_dump(humanhash::uuid());
+php > var_dump(humanhasher::uuid());
 array(2) {
   [0]=>
-  string(29) "hotel-glucose-alanine-alabama"
+  string(26) "king-wisconsin-king-timing"
   [1]=>
-  string(32) "8b5cf0360f304647b7a23b4a9e9c4f7b"
+  string(32) "ab712189d4f6409a85fa828f9d9dcc2c"
 }
 ```
 
